@@ -1,4 +1,15 @@
 package com.pluralsight;
 
-public class TerrestrialVehicle extends Vehicle{
+import java.util.*;
+
+public class TerrestrialVehicle extends Vehicle {
+
+    ArrayList<Wheel> wheels = new ArrayList<>();
+
+    public String toRowTerrestrialVehicle() {
+        return String.format("%s | %s |",
+                wheels.get(0).toRowWheel(),
+                toRowVehicle());
+    }
+
 }

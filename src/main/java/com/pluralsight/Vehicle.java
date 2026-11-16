@@ -1,10 +1,14 @@
 package com.pluralsight;
 
 public class Vehicle {
+    private String name;
     private String color;
     private int numberOfPassengers;
     private int cargoCapacity;
     private double fuelCapacity;
+    private int maxSpeed;
+    private double currentSpeed;
+
 
     public String getColor() {
         return color;
@@ -37,4 +41,16 @@ public class Vehicle {
     public void setFuelCapacity(double fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
     }
+
+    public String toRowVehicle(){
+        return String.format("%s | %s | %d | %d | %f | %d | %f",
+                name,
+                color,
+                numberOfPassengers,
+                cargoCapacity,
+                fuelCapacity,
+                maxSpeed,
+                currentSpeed);
+    }
+
 }
