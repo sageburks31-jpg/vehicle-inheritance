@@ -9,6 +9,14 @@ public class AmphibiusVehicle extends Vehicle {
         this.numberOfPropellers = numberOfPropellers;
     }
 
+    public AmphibiusVehicle(String name, String color, int numberOfPassengers, int cargoCapacity, double fuelCapacity, int maxSpeed, double currentSpeed, int numberOfPropellers) {
+        super(name, color, numberOfPassengers, cargoCapacity, fuelCapacity, maxSpeed, currentSpeed);
+        this.numberOfPropellers = numberOfPropellers;
+    }
+    public AmphibiusVehicle(String name, String color, int numberOfPassengers, int cargoCapacity, double fuelCapacity, int maxSpeed, double currentSpeed) {
+        super(name, color, numberOfPassengers, cargoCapacity, fuelCapacity, maxSpeed, currentSpeed);
+    }
+
     public String toRowAmphibiousVehicle(){
         return String.format("%d | %s |",
                 numberOfPropellers,
