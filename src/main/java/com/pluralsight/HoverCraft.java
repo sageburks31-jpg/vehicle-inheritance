@@ -6,7 +6,5 @@ public class HoverCraft extends  AmphibiusVehicle {
 
     public HoverCraft() {}
 
-    public HoverCraft(int numberOfPropellers) {
-        super(numberOfPropellers);
-    }
+    public HoverCraft(int numberOfPropellers) {super(numberOfPropellers);}
 }

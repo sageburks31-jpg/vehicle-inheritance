@@ -7,7 +7,7 @@ public class App {
         Moped slowRide = new Moped();
         slowRide.setColor("red");
         slowRide.setFuelCapacity(5);
-        System.out.println(slowRide.toRowMoped());
+        System.out.print(slowRide.toRowMoped());
 
     }
 }

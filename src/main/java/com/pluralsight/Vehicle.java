@@ -20,37 +20,21 @@ public class Vehicle {
         this.currentSpeed = currentSpeed;
     }
 
-    public String getColor() {
-        return color;
-    }
+    public String getColor() {return color;}
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+    public void setColor(String color) {this.color = color;}
 
-    public int getNumberOfPassengers() {
-        return numberOfPassengers;
-    }
+    public int getNumberOfPassengers() {return numberOfPassengers;}
 
-    public void setNumberOfPassengers(int numberOfPassengers) {
-        this.numberOfPassengers = numberOfPassengers;
-    }
+    public void setNumberOfPassengers(int numberOfPassengers) {this.numberOfPassengers = numberOfPassengers;}
 
-    public int getCargoCapacity() {
-        return cargoCapacity;
-    }
+    public int getCargoCapacity() {return cargoCapacity;}
 
-    public void setCargoCapacity(int cargoCapacity) {
-        this.cargoCapacity = cargoCapacity;
-    }
+    public void setCargoCapacity(int cargoCapacity) {this.cargoCapacity = cargoCapacity;}
 
-    public double getFuelCapacity() {
-        return fuelCapacity;
-    }
+    public double getFuelCapacity() {return fuelCapacity;}
 
-    public void setFuelCapacity(double fuelCapacity) {
-        this.fuelCapacity = fuelCapacity;
-    }
+    public void setFuelCapacity(double fuelCapacity) {this.fuelCapacity = fuelCapacity;}
 
     public String toRowVehicle(){
         return String.format(" name: %s | color: %s | number Of Passengers: %d | cargo Capacity: %d | fuel Capacity: %.2f | max Speed: %d | currentSpeed:  %.2f",

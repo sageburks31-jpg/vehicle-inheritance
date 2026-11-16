@@ -25,15 +25,9 @@ public class SemiTrailer extends TerrestrialVehicle{
     }
     public SemiTrailer() {}
 
-    public SemiTrailer(ArrayList<Wheel> wheels) {
-        super(wheels);
-    }
+    public SemiTrailer(ArrayList<Wheel> wheels) {super(wheels);}
 
-    public SemiTrailer(String name, String color, int numberOfPassengers, int cargoCapacity, double fuelCapacity, int maxSpeed, double currentSpeed, ArrayList<Wheel> wheels) {
-        super(name, color, numberOfPassengers, cargoCapacity, fuelCapacity, maxSpeed, currentSpeed, wheels);
-    }
+    public SemiTrailer(String name, String color, int numberOfPassengers, int cargoCapacity, double fuelCapacity, int maxSpeed, double currentSpeed, ArrayList<Wheel> wheels) {super(name, color, numberOfPassengers, cargoCapacity, fuelCapacity, maxSpeed, currentSpeed, wheels);}
 
-    public SemiTrailer(String name, String color, int numberOfPassengers, int cargoCapacity, double fuelCapacity, int maxSpeed, double currentSpeed) {
-        super(name, color, numberOfPassengers, cargoCapacity, fuelCapacity, maxSpeed, currentSpeed);
-    }
+    public SemiTrailer(String name, String color, int numberOfPassengers, int cargoCapacity, double fuelCapacity, int maxSpeed, double currentSpeed) {super(name, color, numberOfPassengers, cargoCapacity, fuelCapacity, maxSpeed, currentSpeed);}
 }
