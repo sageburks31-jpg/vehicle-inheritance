@@ -5,4 +5,5 @@ public class HoverCraft extends  AmphibiusVehicle {
     public String toRowCar(){
         return toRowAmphibiousVehicle();
     }
+
 }
