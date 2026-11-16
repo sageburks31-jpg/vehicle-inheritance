@@ -7,6 +7,8 @@ public class Wheel {
     int approximateUseCount;
     int currentUseCount;
 
+
+    public Wheel() {}
     public Wheel(int size, double traction, int approximateUseCount, int currentUseCount) {
         this.size = size;
         this.traction = traction;
@@ -30,5 +32,5 @@ public class Wheel {
 
     public void setCurrentUseCount(int currentUseCount) {this.currentUseCount = currentUseCount;}
 
-    public String toRowWheel() {return String.format("%d | %f | %d | %d",size,traction,approximateUseCount,currentUseCount);}
+    public String toRowWheel() {return String.format("%d | %.2f | %d | %d",size,traction,approximateUseCount,currentUseCount);}
 }

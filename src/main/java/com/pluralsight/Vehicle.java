@@ -9,6 +9,16 @@ public class Vehicle {
     private int maxSpeed;
     private double currentSpeed;
 
+    public Vehicle() {}
+    public Vehicle(String name, String color, int numberOfPassengers, int cargoCapacity, double fuelCapacity, int maxSpeed, double currentSpeed) {
+        this.name = name;
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.maxSpeed = maxSpeed;
+        this.currentSpeed = currentSpeed;
+    }
 
     public String getColor() {
         return color;
@@ -43,7 +53,7 @@ public class Vehicle {
     }
 
     public String toRowVehicle(){
-        return String.format("%s | %s | %d | %d | %f | %d | %f",
+        return String.format(" name: %s | color: %s | number Of Passengers: %d | cargo Capacity: %d | fuel Capacity: %.2f | max Speed: %d | currentSpeed:  %.2f",
                 name,
                 color,
                 numberOfPassengers,

@@ -4,19 +4,14 @@ public class SemiTruck extends TerrestrialVehicle {
 
     SemiTrailer semiTrailer;
 
-    public SemiTrailer getSemiTrailer() {
-        return semiTrailer;
-    }
+    public SemiTruck() {}
+    public SemiTruck(SemiTrailer semiTrailer) {this.semiTrailer = semiTrailer;}
 
-    public boolean hasSemiTrailer() {
-        return semiTrailer != null;
-    }
+    public SemiTrailer getSemiTrailer() {return semiTrailer;}
 
-    public void setSemiTrailer(SemiTrailer semiTrailer) {
-        this.semiTrailer = semiTrailer;
-    }
+    public boolean hasSemiTrailer() {return semiTrailer != null;}
 
-    public String toRowTruck(){
-        return semiTrailer.toRowSemiTrailer() + "|" + toRowTerrestrialVehicle();
-    }
+    public void setSemiTrailer(SemiTrailer semiTrailer) {this.semiTrailer = semiTrailer;}
+
+    public String toRowTruck(){return semiTrailer.toRowSemiTrailer() + "|" + toRowTerrestrialVehicle();}
 }
