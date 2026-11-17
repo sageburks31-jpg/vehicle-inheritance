@@ -16,5 +16,7 @@ public class Moped extends TerrestrialVehicle {
         super(name, color, numberOfPassengers, cargoCapacity, fuelCapacity, maxSpeed, currentSpeed);
     }
 
+    public void ringBell() {}
+
     public String toRowMoped(){return "|" + toRowTerrestrialVehicle();}
 }

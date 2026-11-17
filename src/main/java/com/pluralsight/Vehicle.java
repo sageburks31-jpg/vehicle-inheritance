@@ -21,19 +21,15 @@ public class Vehicle {
     }
 
     public String getColor() {return color;}
-
     public void setColor(String color) {this.color = color;}
 
     public int getNumberOfPassengers() {return numberOfPassengers;}
-
     public void setNumberOfPassengers(int numberOfPassengers) {this.numberOfPassengers = numberOfPassengers;}
 
     public int getCargoCapacity() {return cargoCapacity;}
-
     public void setCargoCapacity(int cargoCapacity) {this.cargoCapacity = cargoCapacity;}
 
     public double getFuelCapacity() {return fuelCapacity;}
-
     public void setFuelCapacity(double fuelCapacity) {this.fuelCapacity = fuelCapacity;}
 
     public String toRowVehicle(){

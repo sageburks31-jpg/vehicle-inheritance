@@ -14,6 +14,9 @@ public class TerrestrialVehicle extends Vehicle {
     }
     public TerrestrialVehicle(String name, String color, int numberOfPassengers, int cargoCapacity, double fuelCapacity, int maxSpeed, double currentSpeed) {super(name, color, numberOfPassengers, cargoCapacity, fuelCapacity, maxSpeed, currentSpeed);}
 
+    public ArrayList<Wheel> getWheels() {return wheels;}
+    public void setWheels(ArrayList<Wheel> wheels) {this.wheels = wheels;}
+
     public String toRowTerrestrialVehicle() {
         if (wheels.isEmpty()) {
             return String.format("%s |",

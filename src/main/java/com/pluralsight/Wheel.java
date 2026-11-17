@@ -17,19 +17,15 @@ public class Wheel {
     }
 
     public int getSize() {return size;}
-
     public void setSize(int size) {this.size = size;}
 
     public double getTraction() {return traction;}
-
     public void setTraction(double traction) {this.traction = traction;}
 
     public int getApproximateUseCount() {return approximateUseCount;}
-
     public void setApproximateUseCount(int approximateUseCount) {this.approximateUseCount = approximateUseCount;}
 
     public int getCurrentUseCount() {return currentUseCount;}
-
     public void setCurrentUseCount(int currentUseCount) {this.currentUseCount = currentUseCount;}
 
     public String toRowWheel() {return String.format("%d | %.2f | %d | %d",size,traction,approximateUseCount,currentUseCount);}
